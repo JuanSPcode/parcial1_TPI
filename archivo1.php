@@ -18,10 +18,12 @@
 <body>
     <!-- Mostrando los personajes -->
     <?php foreach($personajes as $i => $item ):?>
-        <h3>Nombre: <?=$item['nombre'] ?></h3>
-        <img style="height: 150px;" src="./images/<?= $item['id']?>.jpg" alt="">
-        <h3>descripcion: <?=$item['descripcion'] ?></h3>
-        <h3>categoria: <?=$item['categoria'] ?></h3>
+        <div style="border: 1px solid black;">
+            <h3>Nombre: <?=$item['nombre'] ?></h3>
+            <img style="height: 150px;" src="./images/<?= $item['id']?>.jpg" alt="">
+            <h3>descripcion: <?=$item['descripcion'] ?></h3>
+            <h3>categoria: <?=$item['categoria'] ?></h3>
+        </div>
 
     <?php endforeach ?>
 
