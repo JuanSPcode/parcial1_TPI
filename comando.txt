@@ -1,0 +1,3 @@
+docker build -t sp23002 .
+
+docker run -d --name sp23002juan --rm -p 8080:80 -v .:/var/www/html sp23002
